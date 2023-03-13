@@ -39,14 +39,29 @@ class Game {
     form.titleImg.position(40, 50);
     form.titleImg.class("gameTitleAfterEffect");
   }
+  
 
   //SA
   play() {
     this.handleElements();
-
-    //Player.getPlayersInfo();
-
-   
+    Player.getPlayersInfo();
+    if (allPlaers !==undefined) {
+      image(allPlayers !== undefined {
+            image(track, 0 ,-height * 5, width, height * 6); 
+      var index = 0;
+      
+      for (var plr in allPlayers) {
+        
+        index = index + 1;
+         var x = allplayers[plr].positionX
+         var y = height - allplayers[plr].positionY
+         cars[cars - 1].position.x = x;
+         cars[cars - 1].position.y = y;
+      }
+      if(KeyIsDown(UP_ARROW))
+        player.positionY =- 10;
+        player.update();
+    }
       drawSprites();
     }
   }
